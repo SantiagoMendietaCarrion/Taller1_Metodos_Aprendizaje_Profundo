@@ -71,7 +71,7 @@ imagen2 = resize_image(imagen2_original, 480, 480)
 (h, w) = imagen1.shape[:2]
 center = (w / 2, h / 2)
 # Rotación
-M = cv2.getRotationMatrix2D(center, 90, 1.0)
+M = cv2.getRotationMatrix2D(center, 180, 1.0)
 rotated = cv2.warpAffine(imagen1, M, (w, h))
 
 # 6.3. Operación 3: crop (cortar)
